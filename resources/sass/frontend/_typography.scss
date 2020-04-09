@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+
+$crimson: 'Crimson Pro', serif;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $crimson;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: $primary-color;
+
+  section.contact & {
+    color: white;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 45px;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: $primary-color;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: white;
+}

@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap);* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #6b0000;
+}
+
+section.contact body,
+section.contact h1,
+section.contact h2,
+section.contact h3,
+section.contact h4,
+section.contact h5,
+section.contact h6 {
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 45px;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #6b0000;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+section {
+  align-items: center;
+  align-content: space-between;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  align-items: center;
+  align-content: space-between;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 70%;
+  position: relative;
+}
+
+.figure-feature {
+  position: relative;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.figure-feature__corner {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-color: var(--color-accent-primary-1);
+}
+
+.figure-feature__corner_top {
+  top: 0;
+  left: 0;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-left-style: solid;
+}
+
+.figure-feature__corner_bottom {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  right: 0;
+  bottom: 0;
+}
+
+section.home .figure-feature__corner_bottom {
+  border-color: white;
+}
+
+.services_list img {
+  max-width: 70%;
+  padding-top: 0.3rem;
+}
+
+nav {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 1;
+}
+
+nav a {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+input {
+  min-height: 2rem;
+}
+
+.home {
+  background-image: url("/images/main_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.services {
+  background-color: #f4f1f0;
+}
+
+.contact {
+  background-color: #ad7f87;
+  color: white;
+}
+
+form {
+  text-align: right;
+  margin: auto;
+  width: 60%;
+}
+
+label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+label .label-text {
+  color: #fff;
+  cursor: text;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  transform: translateY(-34px);
+  transition: all 0.3s;
+  text-align: left;
+}
+
+label textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: "Crimson Pro", serif;
+}
+
+label:focus + .label-text {
+  color: #fff;
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+label:focus:valid + .label-text {
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 36px;
+  leter-spacing: -1px;
+  outline: 0;
+  text-align: center;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+label input:focus {
+  width: 100%;
+}
+
+label input:focus + .label-text {
+  color: #fff;
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+label input:valid + .label-text {
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+button {
+  background-color: #6b0000;
+  font-family: "Crimson Pro", serif;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 200ms;
+}
+
+button:hover,
+button:focus {
+  background-color: #fff;
+  color: #6b0000;
+  outline: 0;
+}
+
